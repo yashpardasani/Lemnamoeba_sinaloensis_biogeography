@@ -1,6 +1,6 @@
 # ASV distribution and depth plots
 
-This repository contains an R script used to analyze the distribution of selected 18S V4 amplicons/ASVs related to _Lemnamoeba sinaloensis_ 
+This repository contains an R script used to analyze the distribution of selected 18S V4 amplicons/ASVs related to _Lemnamoeba sinaloensis_
 
 ## Input files
 
@@ -38,7 +38,8 @@ The script:
 2. filters the count table to retain only ASVs of interest
 3. merges ASV counts with sample metadata
 4. calculates relative abundance
-5. generates:
+5. saves a tab-separated table containing the ASV occurrences and associated metadata used in the paper
+6. generates:
 
    * a global distribution map of ASVs
    * a depth distribution plot of ASVs
@@ -47,6 +48,7 @@ The script:
 
 The script saves:
 
+* `Supp_table_3_Eukbank_lemnamoeba_ASVs.tsv`: tab-separated table containing the data used in the paper for the selected ASVs
 * `asv_distribution.pdf`
 * `depth_plot.pdf`
 
@@ -54,7 +56,7 @@ The script saves:
 
 * File paths in the script should be updated by the user before running.
 * ASV colors are manually assigned in the script.
-* ASV display names were manually adjusted later for the final figure version; see the Supplementary Table for details.
+* ASV display names were manually adjusted later for the final figure version; see the Supplementary Table (Table S4) for details.
 * In the map, point size represents the maximum relative abundance per site.
 * In the depth plot, point size represents relative abundance.
 
