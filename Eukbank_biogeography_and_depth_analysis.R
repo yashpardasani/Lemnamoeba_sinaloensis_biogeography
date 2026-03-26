@@ -73,6 +73,15 @@ asv_df <- merged_metadata |>
 asv_df <- asv_df |>
   mutate(percent_abundance = 100 * rel_abundance)
 
+##Saving the table 
+write.table(
+  asv_df,
+  file = "/path/Supp_table_3_Eukbank_lemnamoeba_ASVs.tsv",
+  sep = "\t",
+  quote = FALSE,
+  row.names = FALSE
+)
+
 ###############Plotting according to co-ordinates ################
 
 asv_max <- asv_df %>%
